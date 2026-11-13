@@ -1,0 +1,65 @@
+
+@import "tailwindcss";
+
+/* ==============================
+   1. CSS Variables
+============================== */
+
+:root {
+  --background: #0b0b0d;
+  --foreground: #f5f1e8;
+
+  --primary: #c6a15b;
+  --secondary: #a78343;
+
+  --surface: #151518;
+  --muted: #99999f;
+  --border: #29292e;
+}
+
+/* ==============================
+   2. Global Reset
+============================== */
+
+
+/* ==============================
+   3. HTML & Body
+============================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+/* ==============================
+   4. Selection
+============================== */
+
+::selection {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+/* ==============================
+   5. Scrollbar
+============================== */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
